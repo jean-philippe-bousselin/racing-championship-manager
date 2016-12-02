@@ -1,5 +1,4 @@
-# Racing Championship Manager
-
+# Racing Championship Manager (under development)
 Based on preboot/angular2-webpack
 
 ## Dependencies
