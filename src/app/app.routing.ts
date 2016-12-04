@@ -1,14 +1,14 @@
-import { RouterModule, Routes } from '@angular/router';
-
-import { HomeComponent } from './home/home.component';
-import { ChampionshipsComponent } from './championships/championships.component';
-import { AboutComponent } from './about/about.component';
-import { StandingsComponent } from './standings/standings.component';
+import { RouterModule, Routes }   from '@angular/router';
+import { HomeComponent }          from './home/home.component';
+import { ChampionshipsComponent } from './championships/list/championships.component';
+import { StandingsComponent }     from './championships/standings/standings.component';
+import { AboutComponent }         from './about/about.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: HomeComponent},
-  { path: 'championships', component: ChampionshipsComponent,
+  { path: 'championships',
     children: [
+      { path: '', component: ChampionshipsComponent },
       { path: 'standings', component: StandingsComponent }
     ]
   },

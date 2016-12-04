@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'championships',
-  templateUrl: './championships.component.html',
-  styleUrls: ['./championships.component.scss']
+  templateUrl: './championships.component.html'
 })
 export class ChampionshipsComponent implements OnInit {
 
@@ -11,8 +10,6 @@ export class ChampionshipsComponent implements OnInit {
     // Do stuff
   }
 
-  ngOnInit() {
-    console.log('ChampionshipsComponent loaded');
-  }
+  ngOnInit() { }
 
 }

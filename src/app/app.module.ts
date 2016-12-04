@@ -6,9 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { ChampionshipsComponent } from './championships/championships.component';
+import { ChampionshipsComponent } from './championships/list/championships.component';
+import { StandingsComponent } from './championships/standings/standings.component';
 import { AboutComponent } from './about/about.component';
-import { StandingsComponent } from './standings/standings.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 

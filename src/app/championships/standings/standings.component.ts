@@ -10,8 +10,6 @@ export class StandingsComponent implements OnInit {
     // Do stuff
   }
 
-  ngOnInit() {
-    console.log('Standings initialized');
-  }
+  ngOnInit() { }
 
 }
