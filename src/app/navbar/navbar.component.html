@@ -4,9 +4,11 @@
       <ul>
         <li><a [routerLink]="['dashboard']" [routerLinkActive]="['is-active']">Home</a> | </li>
         <li><a [routerLink]="['championships']" [routerLinkActive]="['is-active']">Championships</a> | </li>
-        <li><a [routerLink]="['about']" [routerLinkActive]="['is-active']">About</a> | </li>
-        <li><a [routerLink]="['./championships', 'standings']">StandingsComponent</a></li>
+        <li><a [routerLink]="['about']" [routerLinkActive]="['is-active']">About</a></li>
       </ul>
     </div>
+
+    <router-outlet name="submenu"></router-outlet>
+
   </div>
 </header>

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ChampionshipSubmenuComponent } from './navbar/championship-submenu/championship-submenu.component';
 import { HomeComponent } from './home/home.component';
 import { ChampionshipsComponent } from './championships/list/championships.component';
 import { StandingsComponent } from './championships/standings/standings.component';
@@ -24,6 +25,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   declarations: [
     AppComponent,
     NavbarComponent,
+    ChampionshipSubmenuComponent,
     ChampionshipsComponent,
     HomeComponent,
     AboutComponent,

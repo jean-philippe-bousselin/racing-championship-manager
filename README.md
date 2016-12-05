@@ -1,3 +1,22 @@
+
+#################
+
+IDEAS
+
+add page championship details
+sub route of championships (default page)
+add :id as parameter
+
+
+
+
+
+
+
+
+
+
+
 # Racing Championship Manager (under development)
 Based on preboot/angular2-webpack
 

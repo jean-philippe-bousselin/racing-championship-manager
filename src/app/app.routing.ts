@@ -1,4 +1,5 @@
 import { RouterModule, Routes }   from '@angular/router';
+import { ChampionshipSubmenuComponent }       from './navbar/championship-submenu/championship-submenu.component';
 import { HomeComponent }          from './home/home.component';
 import { ChampionshipsComponent } from './championships/list/championships.component';
 import { StandingsComponent }     from './championships/standings/standings.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'championships',
     children: [
       { path: '', component: ChampionshipsComponent },
+      { path: '', outlet: 'submenu', component: ChampionshipSubmenuComponent },
       { path: 'standings', component: StandingsComponent }
     ]
   },

@@ -28,6 +28,8 @@ module.exports = function makeWebpackConfig() {
    */
   var config = {};
 
+  config.cache = {};
+
   /**
    * Devtool
    * Reference: http://webpack.github.io/docs/configuration.html#devtool
