@@ -1,7 +1,7 @@
 
 #################
 
-IDEAS
+# IDEAS
 
 add page championship details
 sub route of championships (default page)
