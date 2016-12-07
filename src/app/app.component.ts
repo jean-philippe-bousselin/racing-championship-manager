@@ -12,6 +12,5 @@ import '../style/app.scss';
 export class AppComponent {
   constructor(private api: ApiService) {
     // Do something with api
-    console.log('asdasd');
   }
 }
