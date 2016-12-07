@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'submenu',
+  selector: 'my-submenu',
   templateUrl: './championship-submenu.component.html',
   styleUrls: ['./championship-submenu.component.scss']
 })

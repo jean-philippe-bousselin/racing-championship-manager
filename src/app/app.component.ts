@@ -5,10 +5,11 @@ import { ApiService } from './shared';
 import '../style/app.scss';
 
 @Component({
-  selector: 'rcm',
+  selector: 'my-rcm-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
   constructor(private api: ApiService) {
     // Do something with api
