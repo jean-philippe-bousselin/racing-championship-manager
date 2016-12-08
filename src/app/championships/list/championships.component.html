@@ -1,72 +1,17 @@
-<div class="championships">
+<h1 class="center">My Championships</h1>
 
-  <div class="row">
-
-    <div class="col s12 m12">
-      <h1>My Championships</h1>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
+<div class="row">
+    <div class="col s12 m6 l3 card small" *ngFor="let championship of championships">
+        <div class="card-content center-align white-text ">
+            <a href="#" title="Go to this championship">
+                <span class="card-title">{{ championship.name }}</span>
+            </a>
+            <h6>{{ championship.season }}</h6>
+            <p class="left-align">Si ajout d'un descriptif championnat, l'inserer ici...</p>
         </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
+        <div class="card-action center-align">
+            <a href="#">Show Standings</a>
+            <a href="#">Configure</a>
         </div>
-      </div>
     </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://placekitten.com/g/150/100">
-          <span class="card-title">V8ESC Season 1</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
