@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Championship} from '../../shared/entities/championship';
+import {ChampionshipService} from '../../shared/services/championship.service';
 
 @Component({
     selector: 'my-add-championship',
@@ -10,9 +11,11 @@ export class AddChampionshipComponent {
 
     private championship: Championship = new Championship();
 
+    constructor(private championshipService: ChampionshipService) {}
+
     onSubmit() {
         if (this.championship.name && this.championship.season) {
-            // TODO : Appel à ChampionshipService et persister le championnat !
+            this.championshipService.add(this.championship);
         }
     }
 }
