@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ChampionshipSubmenuComponent } from './navbar/championship-submenu/championship-submenu.component';
 import { HomeComponent } from './home/home.component';
 import { ChampionshipsComponent } from './championships/list/championships.component';
+import {AddChampionshipComponent} from './championships/add/add-championship.component';
 import { StandingsComponent } from './championships/standings/standings.component';
 import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
@@ -27,6 +28,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     NavbarComponent,
     ChampionshipSubmenuComponent,
     ChampionshipsComponent,
+    AddChampionshipComponent,
     HomeComponent,
     AboutComponent,
     StandingsComponent
