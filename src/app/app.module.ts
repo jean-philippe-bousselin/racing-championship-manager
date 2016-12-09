@@ -16,6 +16,7 @@ import {routing} from './app.routing';
 
 import {removeNgStyles, createNewHosts} from '@angularclass/hmr';
 import {ChampionshipService} from './shared/services/championship.service';
+import {ConfigureChampionshipComponent} from './championships/configure/configure-championship.component';
 
 @NgModule({
     imports: [
@@ -30,6 +31,7 @@ import {ChampionshipService} from './shared/services/championship.service';
         ChampionshipSubmenuComponent,
         ChampionshipsComponent,
         AddChampionshipComponent,
+        ConfigureChampionshipComponent,
         HomeComponent,
         AboutComponent,
         StandingsComponent

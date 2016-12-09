@@ -15,6 +15,7 @@ export class AddChampionshipComponent {
 
     onSubmit() {
         if (this.championship.name && this.championship.season) {
+            this.championship.id = Math.round(Math.random() * (20 - 10) + 10); // TEMPORARY, OF COURSE...
             this.championshipService.add(this.championship);
         }
     }

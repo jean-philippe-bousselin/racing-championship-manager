@@ -16,7 +16,9 @@
                 <i class="material-icons left">alarm_on</i>
                 Standings
             </a>
-            <a class="waves-effect waves-light btn-flat" title="Configure this championship">
+            <a class="waves-effect waves-light btn-flat"
+               title="Configure this championship"
+               [routerLink]="[championship.id + '/configure']">
                 <i class="material-icons left">settings</i>
                 Configure
             </a>
