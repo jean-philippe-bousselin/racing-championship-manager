@@ -10,6 +10,7 @@ import {ChampionshipService} from '../../shared/services/championship.service';
 export class AddChampionshipComponent {
 
     private championship: Championship = new Championship();
+    private formTitle = 'Create a new championship';
 
     constructor(private championshipService: ChampionshipService) {}
 

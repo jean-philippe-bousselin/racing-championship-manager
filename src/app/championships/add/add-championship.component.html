@@ -3,28 +3,4 @@
     Create
 </a>
 
-<form #formToAddChamp="ngForm" (ngSubmit)="onSubmit()">
-
-    <h3>Create a new Championship</h3>
-
-    <div class="row">
-        <div class="input-field col s12">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" [(ngModel)]="championship.name" required>
-        </div>
-        <div class="input-field col s12">
-            <label for="season">Season</label>
-            <input id="season" name="season" type="text" [(ngModel)]="championship.season" required>
-        </div>
-        <div class="input-field col s12">
-            <button
-                class="btn waves-effect waves-light right submit"
-                type="submit"
-                name="action"
-                [disabled]="!formToAddChamp.form.valid">
-            Done
-                <i class="material-icons right">done</i>
-            </button>
-        </div>
-    </div>
-</form>
+<my-edit-championship [formTitle]="formTitle" [championship]="championship"></my-edit-championship>

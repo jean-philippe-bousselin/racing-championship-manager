@@ -11,6 +11,7 @@ import {ActivatedRoute} from '@angular/router';
 export class ConfigureChampionshipComponent implements OnInit {
 
     private championship: Championship;
+    private formTitle = 'Configuration';
 
     constructor(private championshipService: ChampionshipService, private route: ActivatedRoute) {}
 
@@ -25,7 +26,7 @@ export class ConfigureChampionshipComponent implements OnInit {
             this.championship = this.championshipService.get(championshipId);
 
             if (this.championship) {
-                console.log('Championship =', this.championship);
+                this.formTitle = 'Configure ' + this.championship.name;
             }
         }
     }
