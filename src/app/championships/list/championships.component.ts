@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {ChampionshipService} from '../../shared/services/championship.service';
 
 @Component({
-  selector: 'championships',
-  templateUrl: './championships.component.html'
+    selector: 'my-championships',
+    templateUrl: './championships.component.html',
+    styleUrls: ['./championships.component.scss']
 })
-export class ChampionshipsComponent implements OnInit {
+export class ChampionshipsComponent {
 
-  constructor() {
-    // Do stuff
-  }
-
-  ngOnInit() { }
-
+    constructor(private championshipService: ChampionshipService) {}
 }

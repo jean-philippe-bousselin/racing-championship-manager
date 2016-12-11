@@ -1,17 +1,13 @@
-import { Component } from '@angular/core';
-
-import { ApiService } from './shared';
-
+import {Component} from '@angular/core';
 import '../style/app.scss';
+import {ChampionshipService} from './shared/services/championship.service';
 
 @Component({
-  selector: 'rcm',
+  selector: 'my-rcm-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers: [ChampionshipService]
 })
 export class AppComponent {
-  constructor(private api: ApiService) {
-    // Do something with api
-    console.log('asdasd');
-  }
+
 }
