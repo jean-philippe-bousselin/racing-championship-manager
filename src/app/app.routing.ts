@@ -5,6 +5,7 @@ import { ChampionshipsComponent } from './championships/list/championships.compo
 import { StandingsComponent }     from './championships/standings/standings.component';
 import { AboutComponent }         from './about/about.component';
 import {ConfigureChampionshipComponent} from './championships/configure/configure-championship.component';
+import {ChampionshipDetailsComponent} from './championships/details/championship-details.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: '', outlet: 'submenu', component: ChampionshipSubmenuComponent },
       { path: 'standings', component: StandingsComponent },
       { path: ':id/configure', component: ConfigureChampionshipComponent },
+      { path: ':id/details', component: ChampionshipDetailsComponent }
     ]
   },
   { path: 'about', component: AboutComponent}

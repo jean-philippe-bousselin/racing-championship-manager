@@ -18,6 +18,7 @@ import {removeNgStyles, createNewHosts} from '@angularclass/hmr';
 import {ChampionshipService} from './shared/services/championship.service';
 import {ConfigureChampionshipComponent} from './championships/configure/configure-championship.component';
 import {EditChampionshipComponent} from './shared/forms/edit-championship/edit-championship.component';
+import {ChampionshipDetailsComponent} from './championships/details/championship-details.component';
 
 @NgModule({
     imports: [
@@ -34,6 +35,7 @@ import {EditChampionshipComponent} from './shared/forms/edit-championship/edit-c
         AddChampionshipComponent,
         ConfigureChampionshipComponent,
         EditChampionshipComponent,
+        ChampionshipDetailsComponent,
         HomeComponent,
         AboutComponent,
         StandingsComponent
