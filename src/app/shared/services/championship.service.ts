@@ -17,11 +17,11 @@ export class ChampionshipService {
         scoreBoard.set(3, 50);
         let configuration: Configuration = new Configuration(25, scoreBoard);
         let championships = new Array<Championship>();
-        championships.push(new Championship(1, 'Championship 1', '2016', configuration));
-        championships.push(new Championship(2, 'Championship 2', '2015', configuration));
-        championships.push(new Championship(3, 'Championship 3', '2014', configuration));
-        championships.push(new Championship(4, 'Championship 4', '2013', configuration));
-        championships.push(new Championship(5, 'Championship 5', '2012', configuration));
+        championships.push(new Championship(1, 'Championship 1', '2016', null, configuration));
+        championships.push(new Championship(2, 'Championship 2', '2015', null, configuration));
+        championships.push(new Championship(3, 'Championship 3', '2014', null, configuration));
+        championships.push(new Championship(4, 'Championship 4', '2013', null, configuration));
+        championships.push(new Championship(5, 'Championship 5', '2012', null, configuration));
 
         this.championships = championships;
     }
