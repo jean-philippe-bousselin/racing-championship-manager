@@ -1,15 +1,16 @@
-import {Configuration} from './configuration';
-
 export class Championship {
-    id: number;
-    name: string;
-    season: string;
-    configuration: Configuration;
 
-    constructor(id?: number, name?: string, season?: string, configuration?: Configuration) {
+    constructor(private id?: number, private name?: string) {
         this.id = id;
         this.name = name;
-        this.season = season;
-        this.configuration = configuration;
     }
+
+    public getId() {
+      return this.id;
+    }
+
+    public getName() {
+      return this.name;
+    }
+
 }
