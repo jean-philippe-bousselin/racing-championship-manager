@@ -16,18 +16,6 @@ export class ConfigureChampionshipComponent implements OnInit {
     constructor(private championshipService: ChampionshipService, private route: ActivatedRoute) {}
 
     ngOnInit() {
-        let championshipId: number;
-
-        this.route.params.subscribe(params => {
-            championshipId = +params['id'];
-        });
-
-        if (championshipId) {
-            this.championship = this.championshipService.get(championshipId);
-
-            if (this.championship) {
-                this.formTitle = 'Configure ' + this.championship.name;
-            }
-        }
+        
     }
 }

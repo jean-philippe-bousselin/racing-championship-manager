@@ -15,6 +15,6 @@ export class EditChampionshipComponent {
     constructor(private championshipService: ChampionshipService) {}
 
     onSubmit() {
-        
+        console.log('on submit from EditChampionshipComponent');
     }
 }
