@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Observable }     from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import { Championship } from '../entities/championship';
 import { Configuration } from '../entities/configuration';
 
@@ -11,8 +11,10 @@ export class ChampionshipService {
 
   constructor (private http: Http) {}
 
-  add () {
-
+  upsert (championship: Championship): Observable<Championship> {
+    console.log('firin mah lazah');
+    return this.http.post(this.apiUrl, championship)
+                    .catch(this.handleError);
   }
 
   getChampionships (): Observable<Championship[]> {

@@ -16,8 +16,8 @@ const routes: Routes = [
       { path: '', outlet: 'submenu', component: ChampionshipSubmenuComponent },
       { path: 'standings', component: StandingsComponent },
       { path: ':id/configure', component: ConfigureChampionshipComponent },
-      { path: ':id/details', component: ChampionshipDetailsComponent },
-      { path: 'add', component: AddChampionshipComponent }
+      { path: 'add', component: AddChampionshipComponent },
+      { path: ':id', component: ChampionshipDetailsComponent }
     ]
   },
   { path: 'about', component: AboutComponent}

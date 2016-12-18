@@ -1,6 +1,7 @@
-import {Component, Input} from '@angular/core';
-import {Championship} from '../../entities/championship';
-import {ChampionshipService} from '../../services/championship.service';
+import { Component, Input } from '@angular/core';
+import { Championship } from '../../entities/championship';
+import { ChampionshipService } from '../../services/championship.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'my-edit-championship',
@@ -12,9 +13,18 @@ export class EditChampionshipComponent {
     @Input() championship: Championship;
     @Input() formTitle: string;
 
-    constructor(private championshipService: ChampionshipService) {}
+    constructor(private router: Router, private championshipService: ChampionshipService) {}
 
     onSubmit() {
-        console.log('on submit from EditChampionshipComponent');
+
+      this.championshipService.upsert(this.championship)
+        .subscribe(
+          championship => this.championship = championship,
+          error => console.log(error),
+          () => this.router.navigate(['championships/', 1])
+        )
+
+      return;
+
     }
 }
