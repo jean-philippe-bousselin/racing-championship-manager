@@ -3,8 +3,11 @@
 <form #formToEditChampionship="ngForm" (ngSubmit)="onSubmit()">
     <div class="row">
         <div class="input-field col s12">
-            <label for="name">asd</label>
-            <input id="name" name="name" type="text" [(ngModel)]="championship.name" required>
+            <input placeholder="Name"
+                   name="name"
+                   type="text"
+                   [(ngModel)]="championship.name"
+                   required>
         </div>
        <div class="input-field col s12">
             <button

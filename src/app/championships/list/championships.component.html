@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col s12 m3 l2 card small" *ngFor="let championship of championships">
         <div class="card-content center-align white-text ">
-            <a [routerLink]="[championship.id + '/details']" title="Go to this championship">
+            <a [routerLink]="[championship.id]" title="Go to this championship">
                 <span class="card-title">{{ championship.name }}</span>
             </a>
         </div>

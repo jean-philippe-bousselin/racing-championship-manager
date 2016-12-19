@@ -21,7 +21,7 @@ export class EditChampionshipComponent {
         .subscribe(
           championship => this.championship = championship,
           error => console.log(error),
-          () => this.router.navigate(['championships/', 1])
+          () => this.router.navigate(['championships/', this.championship.id])
         )
 
       return;

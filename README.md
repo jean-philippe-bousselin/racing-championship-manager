@@ -1,24 +1,6 @@
-
-#################
-
-# IDEAS
-
-add page championship details
-sub route of championships (default page)
-add :id as parameter
-
-
-
-
-
-
-
-
-
-
-
 # Racing Championship Manager (under development)
 Based on preboot/angular2-webpack
+
 
 ## Dependencies
 
@@ -44,6 +26,10 @@ As an alternative, you can work using Hot Module Replacement (HMR):
 * `npm run start:hmr`
 
 And you are all set! You can now modify your components on the fly without having to reload the entire page.
+
+## Issues with inotify watchers
+If some of your changes do not trigger the watch process, you probably need to increase the amount of available inotify watchers.
+See https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers 
 
 ## Testing
 

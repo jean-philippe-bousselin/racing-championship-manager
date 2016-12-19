@@ -1,7 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ChampionshipService} from '../../shared/services/championship.service';
-import {Championship} from '../../shared/entities/championship';
-import {ActivatedRoute} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ChampionshipService } from '../../shared/services/championship.service';
+import { Championship } from '../../shared/entities/championship';
 
 @Component({
     selector: 'my-championship-details',
@@ -10,11 +9,19 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ChampionshipDetailsComponent implements OnInit {
 
-    private championship: Championship;
+    championship: Championship;
+    errorMessage: string;
 
-    constructor(private championshipService: ChampionshipService, private route: ActivatedRoute) {}
+    constructor(private championshipService: ChampionshipService) {}
 
-    ngOnInit() {
-        
+    ngOnInit() { this.getChampionship(); }
+
+    getChampionship() {
+      this.championshipService.getChampionship()
+         .subscribe(
+           championship => this.championship = championship,
+           error =>  this.errorMessage = <any>error,
+           () => console.log(this.championship)
+         );
     }
 }

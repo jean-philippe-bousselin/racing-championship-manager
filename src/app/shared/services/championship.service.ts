@@ -14,6 +14,13 @@ export class ChampionshipService {
   upsert (championship: Championship): Observable<Championship> {
     console.log('firin mah lazah');
     return this.http.post(this.apiUrl, championship)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  getChampionship (): Observable<Championship> {
+    return this.http.get(this.apiUrl + '/12')
+                    .map(this.extractData)
                     .catch(this.handleError);
   }
 
