@@ -1,6 +1,8 @@
-@import "../../style/_variables.scss";
+ul.navbar {
 
-nav {
-    background-color: $greyOfLogo;
+  margin: 0; 
 
+  li {
+    display: inline;
+  }
 }

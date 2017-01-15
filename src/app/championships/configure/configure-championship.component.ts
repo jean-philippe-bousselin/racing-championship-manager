@@ -16,6 +16,6 @@ export class ConfigureChampionshipComponent implements OnInit {
     constructor(private championshipService: ChampionshipService, private route: ActivatedRoute) {}
 
     ngOnInit() {
-        
+
     }
 }

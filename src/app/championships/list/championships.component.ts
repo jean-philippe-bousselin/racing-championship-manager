@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChampionshipService } from '../../shared/services/championship.service';
-import { Championship } from '../../shared/entities/championship'
+import { Championship } from '../../shared/entities/championship';
 
 @Component({
     selector: 'my-championships',

@@ -22,7 +22,7 @@ export class EditChampionshipComponent {
           championship => this.championship = championship,
           error => console.log(error),
           () => this.router.navigate(['championships/', this.championship.id])
-        )
+        );
 
       return;
 

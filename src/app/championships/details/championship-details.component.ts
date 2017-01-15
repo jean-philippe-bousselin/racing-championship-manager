@@ -14,14 +14,15 @@ export class ChampionshipDetailsComponent implements OnInit {
 
     constructor(private championshipService: ChampionshipService) {}
 
-    ngOnInit() { this.getChampionship(); }
+    ngOnInit() {  }
 
     getChampionship() {
-      this.championshipService.getChampionship()
-         .subscribe(
-           championship => this.championship = championship,
-           error =>  this.errorMessage = <any>error,
-           () => console.log(this.championship)
-         );
+
+      // @TODO supply id here
+      // this.championshipService.getChampionship()
+      //    .subscribe(
+      //      championship => this.championship = championship,
+      //      error =>  this.errorMessage = <any>error
+      //    );
     }
 }

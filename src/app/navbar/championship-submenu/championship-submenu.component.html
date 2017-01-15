@@ -1,10 +1,15 @@
 <div class="submenu col m12">
     <ul>
         <li>
-            <a [routerLink]="['../championships']" [routerLinkActive]="['is-active']">Championship Name Here | </a>
+            <a [routerLink]="['../']" [routerLinkActive]="['is-active']">
+              {{ championship?.name }}
+            </a> |
         </li>
         <li>
-            <a [routerLink]="['standings']" [routerLinkActive]="['is-active']">Standings</a>
+            <a [routerLink]="['../standings']" [routerLinkActive]="['is-active']">Standings</a> |
+        </li>
+        <li>
+            <a [routerLink]="['../add-session']" [routerLinkActive]="['is-active']">Add Session</a>
         </li>
     </ul>
 </div>

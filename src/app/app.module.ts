@@ -10,6 +10,7 @@ import {HomeComponent} from './home/home.component';
 import {ChampionshipsComponent} from './championships/list/championships.component';
 import {AddChampionshipComponent} from './championships/add/add-championship.component';
 import {StandingsComponent} from './championships/standings/standings.component';
+import {AddSessionComponent} from './sessions/add/add-session.component';
 import {AboutComponent} from './about/about.component';
 import {ApiService} from './shared';
 import {routing} from './app.routing';
@@ -38,7 +39,8 @@ import {ChampionshipDetailsComponent} from './championships/details/championship
         ChampionshipDetailsComponent,
         HomeComponent,
         AboutComponent,
-        StandingsComponent
+        StandingsComponent,
+        AddSessionComponent
     ],
     providers: [
         ApiService,
